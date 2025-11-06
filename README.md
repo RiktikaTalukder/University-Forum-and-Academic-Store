@@ -72,6 +72,7 @@ Activity Diagrams
 Sequence Diagrams
 
 👥 Contributors
+
 Rikitika Talukder (C223256) - Admin Panel, Authentication, Security, Introduction, Functional Requirements, Activity & Sequence Diagrams (Forum/Marketplace).
 
 Meheri Monir (C223261) - Forum Features, User Profile, Frontend Design, Stakeholders, Use Case & Class Diagrams (Forum/Marketplace).
