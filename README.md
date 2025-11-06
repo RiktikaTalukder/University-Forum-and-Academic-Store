@@ -2,6 +2,7 @@ UniHub: IIUC Forum & Store
 UniHub is a comprehensive, integrated web platform designed to foster community and resource sharing within the International Islamic University Chittagong (IIUC). It seamlessly combines a Campus Forum for academic discussions and a Marketplace for buying and selling academic resources, all under one roof.
 
 🚀 Features
+
 For Students
 Campus Forum:
 
@@ -36,6 +37,7 @@ Content Moderation: Monitor and delete inappropriate forum posts and comments.
 Store Oversight: Manage product listings and monitor transactions for policy compliance.
 
 🛠️ Tech Stack & Implementation
+
 This project was developed as part of the Software Engineering Lab (CSE-3638) and Software Development II (CSE-3640) courses.
 
 Frontend: HTML, CSS, JavaScript
@@ -54,23 +56,6 @@ MVC Architecture (inferred from modular separation)
 
 Responsive Web Design
 
-📋 Project Documentation
-The /docs directory (or the report above) contains detailed documentation, including:
-
-User Requirement Specifications (Functional & Non-Functional)
-
-Stakeholder Analysis
-
-UML Diagrams:
-
-Use Case Diagrams
-
-Class Diagrams
-
-Activity Diagrams
-
-Sequence Diagrams
-
 👥 Contributors
 
 Rikitika Talukder (C223256) - Admin Panel, Authentication, Security, Introduction, Functional Requirements, Activity & Sequence Diagrams (Forum/Marketplace).
@@ -82,9 +67,7 @@ Farhana Akhter Talukder (C223265) - Marketplace, Cart/Checkout, Seller Panel, Or
 Supervised by Ms. Fathema Tuj Johora, Assistant Lecturer, Dept. of CSE, IIUC.
 
 🎯 Project Vision
-UniHub aims to enhance the academic experience at IIUC by creating a centralized digital hub that promotes collaboration, knowledge exchange, and sustainable resource sharing, thereby building a more connected and supportive campus community.
 
-📄 License
-This project is developed for academic purposes at the International Islamic University Chittagong.
+UniHub aims to enhance the academic experience at IIUC by creating a centralized digital hub that promotes collaboration, knowledge exchange, and sustainable resource sharing, thereby building a more connected and supportive campus community.
 
 Tags: web-development academic-project university-forum marketplace software-engineering iiuc php mysql javascript
