@@ -1,0 +1,130 @@
+/* Header container */
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: var(--white);
+   z-index: 1000;
+   border-right: var(--border);
+   width: 35rem;
+   padding: 2rem;
+   min-height: 100vh;
+   text-align: center;
+}
+
+/* Logo */
+.header .logo {
+   font-size: 2.5rem;
+   color: var(--black);
+}
+
+.header .logo span {
+   color: var(--main-color);
+}
+
+/* Profile section */
+.header .profile {
+   padding: 2rem;
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   margin: 2rem 0;
+   border: var(--border);
+}
+
+.header .profile p {
+   margin-bottom: 1.5rem;
+   font-size: 2rem;
+   color: var(--black);
+}
+
+/* Navigation */
+.header .navbar {
+   padding: 1rem;
+}
+
+.header .navbar a {
+   display: block;
+   padding: 2rem 0;
+   font-size: 2rem;
+   color: var(--black);
+   text-align: left;
+}
+
+.header .navbar a i {
+   margin-right: 1.5rem;
+   color: var(--main-color);
+   transition: .2s linear;
+}
+
+.header .navbar a:hover i {
+   margin-right: 3rem;
+}
+
+/* Menu button (mobile) */
+#menu-btn {
+   display: none;
+   border: var(--border);
+   border-radius: .5rem;
+   background-color: var(--white);
+   color: var(--black);
+   cursor: pointer;
+   height: 4.5rem;
+   line-height: 4.3rem;
+   width: 4.5rem;
+   font-size: 2rem;
+   position: sticky;
+   top: 1rem;
+   left: 1rem;
+   z-index: 10000;
+   text-align: center;
+}
+
+#menu-btn:hover {
+   background-color: var(--black);
+   color: var(--white);
+}
+
+/* Header buttons */
+.header .btn {
+   display: block;
+   width: 100%;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   cursor: pointer;
+   font-size: 1.8rem;
+   color: var(--white);
+   padding: 1.2rem 3rem;
+   text-align: center;
+   background-color: var(--main-color);
+}
+
+.header .btn:hover {
+   background-color: var(--black);
+}
+
+.header .option-btn {
+   background-color: var(--orange);
+}
+
+.header .flex-btn {
+   display: flex;
+   gap: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+   .header {
+      left: -35rem;
+      transition: .2s linear;
+   }
+
+   .header.active {
+      left: 0;
+      box-shadow: 0 0 0 100vw rgba(0, 0, 0, .7);
+      border-right: none;
+   }
+
+   #menu-btn {
+      display: block;
+   }
+}

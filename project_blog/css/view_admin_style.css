@@ -1,0 +1,287 @@
+/* combined_view_styles.css - Styles for all admin view pages */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root {
+   --main-color:#8e44ad;
+   --red:#e74c3c;
+   --orange:#f39c12;
+   --black:#34495e;
+   --white:#fff;
+   --light-bg:hsl(230, 50%, 90%);;
+   --light-color:#999;
+   --border:.2rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* Base Layout Styles */
+body {
+   font-family: 'Montserrat', sans-serif;
+   background-color: var(--light-bg);
+   padding-left: 35rem;
+   margin: 0;
+   min-height: 100vh;
+}
+
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 35rem;
+   height: 100vh;
+   background-color: var(--white);
+   border-right: var(--border);
+   padding: 2rem;
+   z-index: 1000;
+}
+
+.main-content {
+   padding: 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+/* Common Table Styles */
+.view-container {
+   background-color: var(--white);
+   border-radius: .5rem;
+   box-shadow: var(--box-shadow);
+   border: var(--border);
+   padding: 2rem;
+   margin-top: 2rem;
+}
+
+.data-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 1.5rem;
+}
+
+.data-table thead {
+   background-color: var(--main-color);
+   color: var(--white);
+}
+
+.data-table th, 
+.data-table td {
+   padding: 1.5rem;
+   text-align: left;
+   border-bottom: var(--border);
+   font-size: 1.6rem;
+}
+
+.data-table tr:nth-child(even) {
+   background-color: var(--light-bg);
+}
+
+.data-table tr:hover {
+   background-color: #e8f4f8;
+}
+
+/* Action Buttons */
+.action-btn {
+   padding: 0.5rem 1rem;
+   border-radius: .5rem;
+   font-size: 1.4rem;
+   color: var(--white);
+   transition: all 0.3s ease;
+   display: inline-block;
+   margin: 0.2rem;
+   text-align: center;
+}
+
+.delete-btn {
+   background-color: var(--red);
+}
+
+.edit-btn {
+   background-color: var(--orange);
+}
+
+.view-btn {
+   background-color: var(--main-color);
+}
+
+.action-btn:hover {
+   opacity: 0.8;
+   transform: translateY(-2px);
+}
+
+/* DataTables Customization */
+.dataTables_wrapper {
+   margin-top: 1.5rem;
+}
+
+.dataTables_filter input {
+   border: var(--border);
+   padding: 0.5rem;
+   border-radius: .5rem;
+   font-size: 1.4rem;
+   margin-bottom: 1rem;
+}
+
+.dataTables_length select {
+   border: var(--border);
+   padding: 0.5rem;
+   border-radius: .5rem;
+   font-size: 1.4rem;
+}
+
+.dataTables_info {
+   font-size: 1.4rem;
+   color: var(--light-color);
+}
+
+.dataTables_paginate .paginate_button {
+   padding: 0.5rem 1rem;
+   margin: 0 0.2rem;
+   border-radius: .5rem;
+   border: var(--border);
+   font-size: 1.4rem;
+}
+
+.dataTables_paginate .paginate_button.current,
+.dataTables_paginate .paginate_button.current:hover {
+   background: var(--main-color);
+   color: var(--white) !important;
+   border: .1rem solid var(--main-color);
+}
+
+/* Specific View Enhancements */
+/* Users View */
+.user-email {
+   color: var(--main-color);
+}
+
+/* Sellers View */
+.seller-business {
+   font-weight: bold;
+}
+
+/* Posts View */
+.post-title {
+   font-weight: bold;
+   color: var(--black);
+}
+
+.post-content-preview {
+   max-width: 300px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.likes-count {
+   color: var(--main-color);
+   font-weight: bold;
+}
+
+/* Products View */
+.product-price {
+   color: var(--main-color);
+   font-weight: bold;
+}
+
+.stock-indicator {
+   font-weight: bold;
+}
+
+.stock-low {
+   color: var(--red);
+}
+
+.stock-medium {
+   color: var(--orange);
+}
+
+.stock-high {
+   color: #27ae60;
+}
+
+/* Comments View */
+.comment-content {
+   max-width: 300px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.comment-user {
+   color: var(--main-color);
+   font-weight: bold;
+}
+
+.comment-post {
+   font-style: italic;
+   color: var(--orange);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1200px) {
+   body {
+      padding-left: 0;
+   }
+
+   .header {
+      left: -35rem;
+      transition: .2s linear;
+   }
+
+   .header.active {
+      left: 0;
+      box-shadow: 0 0 0 100vw rgba(0,0,0,.7);
+   }
+
+   #menu-btn {
+      display: block;
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 10000;
+      background-color: var(--white);
+      border: var(--border);
+      border-radius: .5rem;
+      height: 4.5rem;
+      width: 4.5rem;
+      line-height: 4.3rem;
+      font-size: 2rem;
+      text-align: center;
+      cursor: pointer;
+   }
+
+   #menu-btn:hover {
+      background-color: var(--black);
+      color: var(--white);
+   }
+}
+
+@media (max-width: 768px) {
+   .view-container {
+      padding: 1rem;
+   }
+
+   .data-table {
+      font-size: 1.4rem;
+   }
+
+   .data-table th, 
+   .data-table td {
+      padding: 1rem;
+   }
+
+   .action-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+   }
+}
+
+@media (max-width: 450px) {
+   html {
+      font-size: 50%;
+   }
+
+   .heading {
+      font-size: 2.5rem;
+   }
+}
