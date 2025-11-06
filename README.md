@@ -1,7 +1,7 @@
 UniHub: IIUC Forum & Store
 UniHub is a comprehensive, integrated web platform designed to foster community and resource sharing within the International Islamic University Chittagong (IIUC). It seamlessly combines a Campus Forum for academic discussions and a Marketplace for buying and selling academic resources, all under one roof.
 
-Features
+🚀 Features
 For Students
 Campus Forum:
 
@@ -54,7 +54,7 @@ MVC Architecture (inferred from modular separation)
 
 Responsive Web Design
 
-Project Documentation
+📋 Project Documentation
 The /docs directory (or the report above) contains detailed documentation, including:
 
 User Requirement Specifications (Functional & Non-Functional)
@@ -71,7 +71,7 @@ Activity Diagrams
 
 Sequence Diagrams
 
-Contributors
+👥 Contributors
 Rikitika Talukder (C223256) - Admin Panel, Authentication, Security, Introduction, Functional Requirements, Activity & Sequence Diagrams (Forum/Marketplace).
 
 Meheri Monir (C223261) - Forum Features, User Profile, Frontend Design, Stakeholders, Use Case & Class Diagrams (Forum/Marketplace).
@@ -80,10 +80,10 @@ Farhana Akhter Talukder (C223265) - Marketplace, Cart/Checkout, Seller Panel, Or
 
 Supervised by Ms. Fathema Tuj Johora, Assistant Lecturer, Dept. of CSE, IIUC.
 
-Project Vision
+🎯 Project Vision
 UniHub aims to enhance the academic experience at IIUC by creating a centralized digital hub that promotes collaboration, knowledge exchange, and sustainable resource sharing, thereby building a more connected and supportive campus community.
 
-License
+📄 License
 This project is developed for academic purposes at the International Islamic University Chittagong.
 
 Tags: web-development academic-project university-forum marketplace software-engineering iiuc php mysql javascript
